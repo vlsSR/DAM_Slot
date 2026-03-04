@@ -14,7 +14,7 @@ public class Model {
         if (valor1 == valor2 && valor2 == valor3) {
             return apuesta*10;
         } else if (valor1 == valor2 || valor2 == valor3 || valor1 == valor3) {
-            return apuesta*3;
+            return apuesta*2;
         } else {
             return 0;
         }
@@ -27,7 +27,7 @@ public class Model {
             case 2:
                 return "💎";
             case 3:
-                return "🧲";
+                return "🍉";
             case 4:
                 return "🔔";
             case 5:

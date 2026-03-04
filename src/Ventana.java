@@ -61,7 +61,7 @@ public class Ventana extends JFrame {
         dinero = 10;
         dineroActual = new JLabel("Dinero actual: " +dinero);
         tresIguales = new JLabel("3 iguales = X10");
-        dosIguales = new JLabel("2 iguales = X3");
+        dosIguales = new JLabel("2 iguales = X2");
         ceroIguales = new JLabel("0 iguales = 0");
         dineroActual.setFont(new Font("Fuente", Font.BOLD, 20));
         tresIguales.setFont(new Font("Fuente", Font.BOLD, 20));

@@ -21,6 +21,7 @@ public class Controller implements ActionListener {
             if (apuesta > dinero) {
                 JOptionPane.showMessageDialog(ventana, "No puedes apostar mas del dinero que tienes");
             }
+
             else  if (apuesta < 0) {
                 JOptionPane.showMessageDialog(ventana, "No puedes apostar negativo");
             } else if (apuesta == 0) {
@@ -44,8 +45,15 @@ public class Controller implements ActionListener {
                 ventana.setDinero(dinero);
 
                 ventana.getDineroActual().setText("Dinero actual: " +dinero);
+                if (premio > 0) {
+                    JOptionPane.showMessageDialog(ventana, "Ganaste "+premio);
+                } else {
+                    JOptionPane.showMessageDialog(ventana, "Perdiste "+apuesta);
+                }
 
-                JOptionPane.showMessageDialog(ventana, "Ganaste "+premio);
+                if (dinero == 0) {
+                    JOptionPane.showMessageDialog(ventana, "Perdiste todo tu todo dinero \nreinicia el programa para volver a jugar");
+                }
             }
 
         } catch (NumberFormatException ex){
